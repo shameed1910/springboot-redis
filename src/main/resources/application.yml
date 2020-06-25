@@ -1,0 +1,16 @@
+spring:
+    redis:
+      host: localhost
+      password:
+      port: 6379
+      lettuce:
+        shutdown-timeout: 30000
+        pool:
+          # Connection pool maximum connections (negative for no limit) default 8
+          max-active: 30
+          # Maximum free connections in connection pool default 8
+          max-idle: 8
+          # Minimum free connections in connection pool default 0
+          min-idle: 0
+
+
